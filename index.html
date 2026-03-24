@@ -19,58 +19,121 @@ body {
 .container {
   max-width: 420px;
   margin: auto;
-  padding: 20px;
+  padding: 16px;
 }
 
+/* HEADER */
 .header {
-  text-align: center;
-  padding: 30px 0;
+  border: 1px solid #C8A951;
+  border-radius: 14px;
+  padding: 16px;
+  background: #F3EFE7;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .logo {
-  width: 90px;
-  margin-bottom: 10px;
+  width: 55px;
 }
 
-.title {
-  font-size: 20px;
-  color: #C8A951;
+.brand-text {
   font-weight: bold;
+  color: #C8A951;
 }
 
-.subtitle {
+.sub {
   font-size: 12px;
   color: #777;
 }
 
-.card {
-  background: white;
-  border-radius: 14px;
-  padding: 15px;
-  margin-bottom: 15px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.04);
-}
-
-.button {
-  display: block;
-  text-decoration: none;
-  padding: 12px;
-  margin: 8px 0;
+.contact-btn {
+  border: 1px solid #C8A951;
+  padding: 8px 14px;
   border-radius: 10px;
-  text-align: center;
-  font-weight: bold;
-  color: white;
+  font-size: 12px;
+  color: #C8A951;
+  text-decoration: none;
 }
 
-.call { background: #C8A951; }
-.whatsapp { background: #25D366; }
-.map { background: #444; }
+.divider {
+  height: 1px;
+  background: #C8A951;
+  margin: 12px 0;
+}
+
+/* SECTION TITLE */
+.section-title {
+  text-align: center;
+  color: #C8A951;
+  font-size: 13px;
+  margin: 14px 0;
+}
+
+/* CARD */
+.card {
+  background: #F3EFE7;
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-main {
+  font-weight: bold;
+}
+
+.text-sub {
+  font-size: 12px;
+  color: #777;
+}
+
+/* FOOTER TABLE */
+.info-box {
+  background: #F3EFE7;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
 
 .footer {
-  font-size: 11px;
   text-align: center;
-  color: #888;
-  margin-top: 20px;
+  font-size: 12px;
+  margin-top: 16px;
+  color: #777;
 }
 </style>
 </head>
@@ -81,32 +144,105 @@ body {
 
   <!-- HEADER -->
   <div class="header">
-    <img src="logo.png" class="logo">
-    <div class="title">مجوهرات خالد</div>
-    <div class="subtitle">KHALED JEWELRY CO.</div>
+
+    <div class="top-row">
+      <div class="brand">
+        <img src="logo.png" class="logo">
+        <div>
+          <div class="brand-text">مجوهرات خالد</div>
+          <div class="sub">KHALED JEWELRY CO.</div>
+        </div>
+      </div>
+
+      <a href="#" class="contact-btn">Contact Us</a>
+    </div>
+
+    <div class="divider"></div>
+
   </div>
 
-  <!-- CONTACT -->
+  <!-- CALL -->
+  <div class="section-title">التواصل المباشر</div>
+
   <div class="card">
-    <a href="tel:+966507678158" class="button call">📞 اتصال مباشر</a>
-    <a href="https://wa.me/966507678158" class="button whatsapp">💬 واتساب</a>
-    <a href="https://maps.app.goo.gl/94CNwU3p5EsgLz6A7" class="button map">📍 الموقع</a>
+    <div class="card-left">
+      <div class="icon">📞</div>
+      <div>
+        <div class="text-main">+966 50 767 8158</div>
+        <div class="text-sub">Direct Call</div>
+      </div>
+    </div>
+    →
+  </div>
+
+  <div class="card">
+    <div class="card-left">
+      <div class="icon">💬</div>
+      <div>
+        <div class="text-main">واتساب</div>
+        <div class="text-sub">WhatsApp</div>
+      </div>
+    </div>
+    →
   </div>
 
   <!-- SOCIAL -->
+  <div class="section-title">وسائل التواصل الاجتماعي</div>
+
   <div class="card">
-    <div>@khaledjewels.sa</div>
+    <div class="card-left">
+      <div class="icon">📸</div>
+      <div>
+        <div class="text-main">@khaledjewels.sa</div>
+        <div class="text-sub">Instagram</div>
+      </div>
+    </div>
+    →
+  </div>
+
+  <div class="card">
+    <div class="card-left">
+      <div class="icon">👻</div>
+      <div>
+        <div class="text-main">@khaledjewels.sa</div>
+        <div class="text-sub">Snapchat</div>
+      </div>
+    </div>
+    →
+  </div>
+
+  <!-- MAP -->
+  <div class="section-title">الموقع</div>
+
+  <div class="card">
+    <div class="card-left">
+      <div class="icon">📍</div>
+      <div>
+        <div class="text-main">موقعنا على الخريطة</div>
+        <div class="text-sub">Google Maps</div>
+      </div>
+    </div>
+    →
   </div>
 
   <!-- INFO -->
-  <div class="card">
-    <div>📍 الطائف - المملكة العربية السعودية</div>
-    <div>🏢 سجل تجاري: 7003475030</div>
-    <div>🧾 رقم ضريبي: 311326867900003</div>
+  <div class="info-box">
+    <div class="info-row">
+      <div>سجل تجاري</div>
+      <div>7003475030</div>
+    </div>
+    <div class="info-row">
+      <div>الرقم الضريبي</div>
+      <div>311326867900003</div>
+    </div>
+    <div class="info-row">
+      <div>العنوان</div>
+      <div>الطائف</div>
+    </div>
   </div>
 
   <div class="footer">
-    مجوهرات خالد - جميع الحقوق محفوظة
+    شكراً لتعاملكم مع مجوهرات خالد
   </div>
 
 </div>
