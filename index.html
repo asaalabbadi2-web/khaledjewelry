@@ -1,191 +1,114 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تواصل معنا | مجوهرات خالد</title>
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary-gold: #C4A77D;
-            --dark-gold: #A6895A;
-            --bg-cream: #FCF9F2;
-            --text-dark: #2C2C2C;
-            --white: #ffffff;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        body {
-            font-family: 'Tajawal', sans-serif;
-            background-color: var(--bg-cream);
-            color: var(--text-dark);
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
+<title>مجوهرات خالد</title>
 
-        .contact-card {
-            background: var(--white);
-            width: 100%;
-            max-width: 450px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-            overflow: hidden;
-            margin: 20px;
-            border: 1px solid rgba(196, 167, 125, 0.2);
-        }
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
 
-        .header {
-            background-color: var(--primary-gold);
-            padding: 40px 20px;
-            text-align: center;
-            color: var(--white);
-        }
+<style>
+body {
+  margin: 0;
+  font-family: 'Cairo', sans-serif;
+  background: #F7F5F0;
+  color: #2B2B2B;
+}
 
-        .logo-placeholder {
-            font-size: 24px;
-            font-weight: 700;
-            border: 2px solid var(--white);
-            display: inline-block;
-            padding: 10px 20px;
-            margin-bottom: 10px;
-        }
+.container {
+  max-width: 420px;
+  margin: auto;
+  padding: 20px;
+}
 
-        .company-name {
-            margin: 10px 0 5px;
-            font-size: 22px;
-        }
+.header {
+  text-align: center;
+  padding: 30px 0;
+}
 
-        .company-name-en {
-            font-size: 14px;
-            opacity: 0.9;
-            letter-spacing: 1px;
-        }
+.logo {
+  width: 90px;
+  margin-bottom: 10px;
+}
 
-        .content {
-            padding: 30px 20px;
-        }
+.title {
+  font-size: 20px;
+  color: #C8A951;
+  font-weight: bold;
+}
 
-        .contact-item {
-            display: flex;
-            align-items: center;
-            background: var(--bg-cream);
-            padding: 15px;
-            border-radius: 12px;
-            margin-bottom: 15px;
-            text-decoration: none;
-            color: var(--text-dark);
-            transition: all 0.3s ease;
-            border: 1px solid transparent;
-        }
+.subtitle {
+  font-size: 12px;
+  color: #777;
+}
 
-        .contact-item:hover {
-            border-color: var(--primary-gold);
-            transform: translateY(-2px);
-        }
+.card {
+  background: white;
+  border-radius: 14px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.04);
+}
 
-        .icon {
-            width: 40px;
-            height: 40px;
-            background: var(--primary-gold);
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-left: 15px;
-            font-size: 18px;
-        }
+.button {
+  display: block;
+  text-decoration: none;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
 
-        .info-text h4 {
-            margin: 0;
-            font-size: 13px;
-            color: var(--dark-gold);
-        }
+.call { background: #C8A951; }
+.whatsapp { background: #25D366; }
+.map { background: #444; }
 
-        .info-text p {
-            margin: 2px 0 0;
-            font-weight: 500;
-        }
-
-        .legal-footer {
-            padding: 20px;
-            text-align: center;
-            font-size: 11px;
-            color: #888;
-            border-top: 1px solid #f0f0f0;
-        }
-
-        .legal-item {
-            margin-bottom: 5px;
-        }
-
-        .status-badge {
-            font-size: 10px;
-            background: #eee;
-            padding: 2px 8px;
-            border-radius: 10px;
-            color: #666;
-        }
-    </style>
+.footer {
+  font-size: 11px;
+  text-align: center;
+  color: #888;
+  margin-top: 20px;
+}
+</style>
 </head>
+
 <body>
 
-<div class="contact-card">
-    <div class="header">
-        <div class="logo-placeholder">K</div>
-        <h1 class="company-name">مجوهرات خالد</h1>
-        <div class="company-name-en">KHALED JEWELRY CO.</div>
-    </div>
+<div class="container">
 
-    <div class="content">
-        <a href="https://wa.me/966507678158" class="contact-item">
-            <div class="icon">💬</div>
-            <div class="info-text">
-                <h4>واتساب / اتصال</h4>
-                <p>+966 507678158</p>
-            </div>
-        </a>
+  <!-- HEADER -->
+  <div class="header">
+    <img src="logo.png" class="logo">
+    <div class="title">مجوهرات خالد</div>
+    <div class="subtitle">KHALED JEWELRY CO.</div>
+  </div>
 
-        <a href="https://instagram.com/khaledjewels.sa" class="contact-item">
-            <div class="icon">📸</div>
-            <div class="info-text">
-                <h4>إنستغرام</h4>
-                <p>@khaledjewels.sa</p>
-            </div>
-        </a>
+  <!-- CONTACT -->
+  <div class="card">
+    <a href="tel:+966507678158" class="button call">📞 اتصال مباشر</a>
+    <a href="https://wa.me/966507678158" class="button whatsapp">💬 واتساب</a>
+    <a href="https://maps.app.goo.gl/94CNwU3p5EsgLz6A7" class="button map">📍 الموقع</a>
+  </div>
 
-        <a href="https://snapchat.com/add/khaledjewels.sa" class="contact-item">
-            <div class="icon">👻</div>
-            <div class="info-text">
-                <h4>سناب شات</h4>
-                <p>@khaledjewels.sa</p>
-            </div>
-        </a>
+  <!-- SOCIAL -->
+  <div class="card">
+    <div>@khaledjewels.sa</div>
+  </div>
 
-        <a href="https://maps.google.com/?q=الطائف_المملكة_العربية_السعودية" class="contact-item">
-            <div class="icon">📍</div>
-            <div class="info-text">
-                <h4>الموقع</h4>
-                <p>الطائف، المملكة العربية السعودية</p>
-            </div>
-        </a>
+  <!-- INFO -->
+  <div class="card">
+    <div>📍 الطائف - المملكة العربية السعودية</div>
+    <div>🏢 سجل تجاري: 7003475030</div>
+    <div>🧾 رقم ضريبي: 311326867900003</div>
+  </div>
 
-        <div class="contact-item" style="cursor: default;">
-            <div class="icon">🌐</div>
-            <div class="info-text">
-                <h4>الموقع الإلكتروني</h4>
-                <p>khaledjewelry.sa <span class="status-badge">قيد الإنشاء</span></p>
-            </div>
-        </div>
-    </div>
+  <div class="footer">
+    مجوهرات خالد - جميع الحقوق محفوظة
+  </div>
 
-    <div class="legal-footer">
-        <div class="legal-item">السجل التجاري: 7003475030</div>
-        <div class="legal-item">الرقم الضريبي: 311326867900003</div>
-        <div class="legal-item" style="margin-top: 10px; font-weight: bold;">بريق الذهب.. وجمال الياقوت</div>
-    </div>
 </div>
 
 </body>
