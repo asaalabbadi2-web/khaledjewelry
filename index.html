@@ -12,20 +12,20 @@
 body {
   margin: 0;
   font-family: 'Cairo', sans-serif;
-  background: #F7F5F0;
-  color: #2B2B2B;
+  background: #F6F3EE;
 }
 
 .container {
   max-width: 420px;
-  margin: auto;
-  padding: 16px;
+  margin: 20px auto;
+  background: #fff;
+  border: 1px solid #C8A951;
+  border-radius: 14px;
+  overflow: hidden;
 }
 
 /* HEADER */
 .header {
-  border: 1px solid #C8A951;
-  border-radius: 14px;
   padding: 16px;
   background: #F3EFE7;
 }
@@ -36,71 +36,68 @@ body {
   align-items: center;
 }
 
+.contact-btn {
+  border: 1px solid #C8A951;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  color: #C8A951;
+}
+
 .brand {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  text-align: right;
 }
 
 .logo {
-  width: 55px;
+  width: 45px;
+  margin-bottom: 5px;
 }
 
-.brand-text {
+.title {
+  color: #B8953B;
   font-weight: bold;
-  color: #C8A951;
 }
 
 .sub {
-  font-size: 12px;
+  font-size: 11px;
   color: #777;
 }
 
-.contact-btn {
-  border: 1px solid #C8A951;
-  padding: 8px 14px;
-  border-radius: 10px;
-  font-size: 12px;
-  color: #C8A951;
-  text-decoration: none;
-}
-
 .divider {
-  height: 1px;
+  height: 2px;
   background: #C8A951;
-  margin: 12px 0;
 }
 
-/* SECTION TITLE */
+/* SECTION */
 .section-title {
   text-align: center;
   color: #C8A951;
+  margin: 15px 0;
   font-size: 13px;
-  margin: 14px 0;
 }
 
 /* CARD */
 .card {
   background: #F3EFE7;
-  border-radius: 12px;
+  margin: 10px 15px;
+  border-radius: 10px;
   padding: 12px;
-  margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.card-left {
+.card-right {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.icon {
+.icon-box {
   width: 40px;
   height: 40px;
+  background: #fff;
   border-radius: 10px;
-  background: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -115,24 +112,33 @@ body {
   color: #777;
 }
 
-/* FOOTER TABLE */
+.arrow {
+  color: #C8A951;
+}
+
+/* INFO */
 .info-box {
-  background: #F3EFE7;
-  border-radius: 12px;
-  margin-top: 10px;
+  margin: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #eee;
 }
 
 .info-row {
   display: flex;
   justify-content: space-between;
   padding: 10px;
+  background: #F3EFE7;
   border-bottom: 1px solid #ddd;
 }
 
+/* FOOTER */
 .footer {
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  background: #F3EFE7;
   font-size: 12px;
-  margin-top: 16px;
   color: #777;
 }
 </style>
@@ -144,105 +150,121 @@ body {
 
   <!-- HEADER -->
   <div class="header">
-
     <div class="top-row">
+
       <div class="brand">
         <img src="logo.png" class="logo">
-        <div>
-          <div class="brand-text">مجوهرات خالد</div>
-          <div class="sub">KHALED JEWELRY CO.</div>
-        </div>
+        <div class="title">مجوهرات خالد</div>
+        <div class="sub">KHALED JEWELRY CO.</div>
       </div>
 
-      <a href="#" class="contact-btn">Contact Us</a>
+      <div class="contact-btn">Contact Us</div>
+
     </div>
-
-    <div class="divider"></div>
-
   </div>
+
+  <div class="divider"></div>
 
   <!-- CALL -->
   <div class="section-title">التواصل المباشر</div>
 
   <div class="card">
-    <div class="card-left">
-      <div class="icon">📞</div>
+    <div class="card-right">
+      <div class="icon-box">
+        <!-- Phone SVG -->
+        <svg width="18" fill="#C8A951" viewBox="0 0 24 24">
+          <path d="M6.6 10.8c1.8 3.5 4.7 6.3 8.2 8.2l2.7-2.7c.3-.3.7-.4 1.1-.3 1.2.4 2.4.6 3.7.6.6 0 1 .4 1 1v4.2c0 .6-.4 1-1 1C10.7 23 1 13.3 1 2c0-.6.4-1 1-1H6c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.7.1.4 0 .8-.3 1.1l-2.7 2.7z"/>
+        </svg>
+      </div>
       <div>
         <div class="text-main">+966 50 767 8158</div>
         <div class="text-sub">Direct Call</div>
       </div>
     </div>
-    →
+    <div class="arrow">←</div>
   </div>
 
   <div class="card">
-    <div class="card-left">
-      <div class="icon">💬</div>
+    <div class="card-right">
+      <div class="icon-box">
+        <!-- WhatsApp -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="22">
+      </div>
       <div>
         <div class="text-main">واتساب</div>
         <div class="text-sub">WhatsApp</div>
       </div>
     </div>
-    →
+    <div class="arrow">←</div>
   </div>
 
   <!-- SOCIAL -->
   <div class="section-title">وسائل التواصل الاجتماعي</div>
 
   <div class="card">
-    <div class="card-left">
-      <div class="icon">📸</div>
+    <div class="card-right">
+      <div class="icon-box">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" width="22">
+      </div>
       <div>
         <div class="text-main">@khaledjewels.sa</div>
         <div class="text-sub">Instagram</div>
       </div>
     </div>
-    →
+    <div class="arrow">←</div>
   </div>
 
   <div class="card">
-    <div class="card-left">
-      <div class="icon">👻</div>
+    <div class="card-right">
+      <div class="icon-box">
+        <img src="https://upload.wikimedia.org/wikipedia/en/c/c4/Snapchat_logo.svg" width="22">
+      </div>
       <div>
         <div class="text-main">@khaledjewels.sa</div>
         <div class="text-sub">Snapchat</div>
       </div>
     </div>
-    →
+    <div class="arrow">←</div>
   </div>
 
   <!-- MAP -->
   <div class="section-title">الموقع</div>
 
   <div class="card">
-    <div class="card-left">
-      <div class="icon">📍</div>
+    <div class="card-right">
+      <div class="icon-box">
+        <svg width="20" fill="#C8A951" viewBox="0 0 24 24">
+          <path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5 14.5 7.6 14.5 9 13.4 11.5 12 11.5z"/>
+        </svg>
+      </div>
       <div>
         <div class="text-main">موقعنا على الخريطة</div>
         <div class="text-sub">Google Maps</div>
       </div>
     </div>
-    →
+    <div class="arrow">←</div>
   </div>
 
   <!-- INFO -->
   <div class="info-box">
     <div class="info-row">
+      <div>700123456</div>
       <div>سجل تجاري</div>
-      <div>7003475030</div>
     </div>
     <div class="info-row">
+      <div>33000000000000003</div>
       <div>الرقم الضريبي</div>
-      <div>311326867900003</div>
     </div>
     <div class="info-row">
-      <div>العنوان</div>
       <div>الطائف</div>
+      <div>العنوان</div>
     </div>
   </div>
 
+  <!-- FOOTER -->
   <div class="footer">
-    شكراً لتعاملكم مع مجوهرات خالد
+    <div>KHALED JEWELRY CO.</div>
+    <div>شكراً لتعاملكم مع مجوهرات خالد</div>
   </div>
 
 </div>
